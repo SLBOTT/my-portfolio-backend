@@ -1,7 +1,13 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'europe-west1-docker.pkg.dev/portfolio-483713/my-repo/my-image:tag1', '.' ]
+  args:
+    - 'build'
+    - '-t'
+    - 'europe-west1-docker.pkg.dev/portfolio-484407/my-repo/my-image:tag1'
+    - '.'
+
 images:
-- 'europe-west1-docker.pkg.dev/portfolio-483713/my-repo/my-image:tag1'
+- 'europe-west1-docker.pkg.dev/portfolio-484407/my-repo/my-image:tag1'
+
 options:
   logging: CLOUD_LOGGING_ONLY
